@@ -25,6 +25,17 @@
     --mob-font-size:1em;
     --mob-max-font-size:1.3em;
 
-    
+    --nav-height:72px;
+    --mid-nav-height:60px;
+    --mob-nav-height:42px;
+
+    --overlay-color:#fff;
+
+    --profile-icon-width:85px;
+    --profile-icon-height:65px;
+    --mid-icon-width:65px;
+    --mid-icon-height:65px;
+    --mob-icon-width:35px;
+    --mob-icon-height:35px;
 
 }

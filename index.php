@@ -15,7 +15,12 @@
     <section class="wrapper">
 
         <nav>
-            
+            <div class="overlaybox profileicon">
+                <img src="/assets/pics/dev0ps221.jpeg" alt="logo tektech" class='overlaypic'>
+                <div class="overlaydata">
+                    texte
+                </div>
+            </div>
         </nav>
 
     </section>
