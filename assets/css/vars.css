@@ -24,9 +24,9 @@
     --font-size:1em;
     --max-font-size:2em;
 
-    --min-heading-font-size:2.5em;
-    --heading-font-size:3em;
-    --max-heading-font-size:3.5em;
+    --min-heading-font-size:1.5em;
+    --heading-font-size:2em;
+    --max-heading-font-size:2.5em;
 
     
     /* //paddings */
@@ -64,10 +64,10 @@
         --nav-height:60px;
         --profile-icon-width:65px;
         --profile-icon-height:55px;
-
-        --min-heading-font-size:1.5em;
-        --heading-font-size:2em;
-        --max-heading-font-size:2.5em;
+        --max-font-size:1.5em;
+        --min-heading-font-size:1.2em;
+        --heading-font-size:1.5em;
+        --max-heading-font-size:1.8em;
     }
 }
 @media screen and (max-width:600px){
@@ -80,8 +80,5 @@
         --nav-height:42px;
         --profile-icon-width:35px;
         --profile-icon-height:25px;
-        --min-heading-font-size:.8em;
-        --heading-font-size:1.5em;
-        --max-heading-font-size:2.8em;
     }
 }
