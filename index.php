@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur mon profil</title>
     <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
 </head>
 <body>
     
@@ -17,7 +18,8 @@
         </nav>
 
     </section>
-
+    <script src="/assets/js/master.js"></script>
+    <script src="/assets/js/nav.js"></script>
 
 </body>
 </html>
