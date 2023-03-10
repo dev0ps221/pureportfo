@@ -1,0 +1,36 @@
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes leftIn {
+    from{
+        transform:translateX(-200vw);
+    }
+}
+@keyframes leftOut {
+    to{
+        transform:translateX(-200vw);
+    }
+}
+@keyframes rightIn {
+    from{
+        transform:translateX(-200vw);
+    }
+}
+@keyframes rightOut {
+    to{
+        transform:translateX(-200vw);
+    }
+}
