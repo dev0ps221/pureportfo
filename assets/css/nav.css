@@ -7,19 +7,10 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-inline: var(--inline-padding);
 }
 nav .wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-@media screen and (max-width:992px) {
-    nav{
-        height: var(--mid-nav-height);
-    }
-}
-@media screen and (max-width:600px) {
-    nav{
-        height: var(--mob-nav-height);
-    }
 }

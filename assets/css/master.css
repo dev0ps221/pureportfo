@@ -41,15 +41,3 @@ body{
     width: var(--profile-icon-width);
     height: var(--profile-icon-height);
 }
-@media screen and (max-width:992px) {
-    .profileicon{
-        width: var(--mid-profile-icon-width);
-        height: var(--mid-profile-icon-height);
-    }
-}
-@media screen and (max-width:600px) {
-    .profileicon{
-        width: var(--mob-profile-icon-width);
-        height: var(--mob-profile-icon-height);
-    }
-}

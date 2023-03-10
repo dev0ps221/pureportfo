@@ -36,14 +36,14 @@
     
     
     
-    
-
-    --inline-padding:5rem;
+    --inline-padding:15rem;
+    --block-padding:15rem;
 
 }
 @media screen and (max-width:992px){
     :root{
-        --inline-padding:4rem;
+        --inline-padding:5rem;
+        --block-padding:5rem;
         --nav-height:60px;
         --profile-icon-width:65px;
         --profile-icon-height:55px;
@@ -52,6 +52,7 @@
 @media screen and (max-width:600px){
     :root{
         --inline-padding:2rem;
+        --block-padding:2rem;
         --min-font-size:.6em;
         --font-size:1em;
         --max-font-size:1.3em;
