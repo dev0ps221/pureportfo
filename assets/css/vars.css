@@ -1,3 +1,26 @@
 :root{
     
+    --main-background-color:#fff;
+    --main-color:#111;
+    --second-background-color:#1aa;
+    --second-color:#f11;
+    --third-background-color:#a1a;
+    --third-color:#1f1;
+    --fourth-background-color:#aa1;
+    --fourth-color:#11f;
+    
+    --min-font-size:.8em;
+    --font-size:1em;
+    --max-font-size:2em;
+
+    --min-heading-font-size:2.5em;
+    --min-heading-font-size:3em;
+    --max-heading-font-size:3.5em;
+
+    --mob-min-font-size:.6em;
+    --mob-font-size:1em;
+    --mob-max-font-size:1.3em;
+
+    
+
 }
