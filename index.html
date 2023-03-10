@@ -72,10 +72,10 @@
                         A propos de moi
                     </h2>
                     <div class="overview pair pair-1-3">
-                        <div class="overlaybox">
-                            <img src="/assets/pics/self.jpg" alt="El Hadji Seybatou Mbengue" class="overlaypic">
+                        <div class="avatar">
+                            <img src="/assets/pics/self.jpg" alt="El Hadji Seybatou Mbengue">
                             <h4>
-                                El Hadji Seybatou Mbengue
+                                El Hadji Seybatou Mbengue (@dev0ps221)
                             </h4>
                         </div>
                         <div class="overview-content">
@@ -316,9 +316,9 @@
             #services .liste_services{
                 padding-inline: var(--inline-padding);
             }
-            #services .liste_services .service{
-                display: grid;
-                grid-template-columns: 3fr 9fr;
+            #services .liste_services .service *{
+                margin-inline: auto;
+                width: 95%;
             }
         </style>
 
@@ -327,11 +327,33 @@
                 Je propose mes services dans
             </h2>
             <div class="liste_services">
-                <div class="service">
+                <div class="service pair">
                     <div class="overlaybox">
                         <img src="/assets/illus_services/integration.avif" alt="integration de fonctionnalites" class="overlaypic"/>
-                        <h2>
+                        <h2 class="overlaydata">
                             INTEGRATION DE FONCTIONNALITES
+                        </h2>
+                    </div>
+                    <p class="descriptif_service">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam id sit porro laborum eligendi ipsam maxime reprehenderit nam non aut praesentium delectus, consectetur, at accusamus eaque, excepturi sequi omnis nihil?
+                    </p>
+                </div>
+                <div class="service pair">
+                    <div class="overlaybox">
+                        <img src="/assets/illus_services/webdev.avif" alt="integration de fonctionnalites" class="overlaypic"/>
+                        <h2 class="overlaydata">
+                            DEVELOPPEMENT WEB
+                        </h2>
+                    </div>
+                    <p class="descriptif_service">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam id sit porro laborum eligendi ipsam maxime reprehenderit nam non aut praesentium delectus, consectetur, at accusamus eaque, excepturi sequi omnis nihil?
+                    </p>
+                </div>
+                <div class="service pair">
+                    <div class="overlaybox">
+                        <img src="/assets/illus_services/mobdev.avif" alt="integration de fonctionnalites" class="overlaypic"/>
+                        <h2 class="overlaydata">
+                            DEVELOPPEMENT MOBILE
                         </h2>
                     </div>
                     <p class="descriptif_service">
