@@ -14,6 +14,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     padding-inline: var(--inline-padding);
+    z-index: 1;
 }
 nav .wrapper{
     display: flex;
@@ -34,7 +35,6 @@ nav .links{
     top:var(--nav-height);
     width: calc(calc(100vw - var(--inline-padding)/2)/1.25);
     overflow: hidden;
-    z-index: 10;
 }
 nav .links.visible{
     overflow-y: scroll;

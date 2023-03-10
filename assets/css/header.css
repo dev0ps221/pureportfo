@@ -6,3 +6,9 @@ header .wrapper{
     height: 100%;
     width: 100%;
 }
+header .wrapper .overlaydata{
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: center;
+}

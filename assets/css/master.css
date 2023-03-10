@@ -7,6 +7,9 @@
     margin:0;
     box-sizing: content-box;
 }
+h1,h2,h3,h4,h5,h6{
+    font-size: var(--heading-font-size);
+}
 body{
     width: 100vw;
     min-height: 100vh;
@@ -16,7 +19,9 @@ body{
     background-image: var(--main-background-image);
     color: var(--main-color);
 }
-
+.wrapper *{
+    animation: leftIn 1s forwards;
+}
 
 .overlaybox{
     position: relative;
