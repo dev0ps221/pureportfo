@@ -1,5 +1,10 @@
+/* 
+    @pureportfo vars 
+    //Author:@dev0ps221
+*/
 :root{
-    
+
+    /* //mains colors */
     --main-background-color:#fff;
     --main-background-image:"";
     --main-color:#111;
@@ -13,6 +18,8 @@
     --fourth-background-image:"";
     --fourth-color:#11f;
     
+    
+    /* //fonts */
     --min-font-size:.8em;
     --font-size:1em;
     --max-font-size:2em;
@@ -22,20 +29,25 @@
     --max-heading-font-size:3.5em;
 
     
-    
-    
+    /* //paddings */
+    --base-padding:1.2rem;
 
+
+    
+    /* //height of the navbar */
     --nav-height:72px;
     
     
-
+    /* //text color of overlayboxes */
     --overlay-color:#fff;
 
+
+    /* //basic box sizing for profile picture layout */
     --profile-icon-width:85px;
     --profile-icon-height:65px;
     
     
-    
+    /* //main padding for different blocs */
     --inline-padding:15rem;
     --block-padding:15rem;
 

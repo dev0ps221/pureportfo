@@ -1,3 +1,8 @@
+/* 
+    @pureportfo vars 
+    //Author:@dev0ps221
+*/
+
 /* //nav layout */
 nav{
     position: sticky;
@@ -26,6 +31,10 @@ nav .links{
     position: absolute;
     background: var(--main-color);
     top:var(--nav-height);
+    width: calc(calc(100vw - var(--inline-padding)/2)/1.25);
+}
+nav .links > *{
+    padding: var(--base-padding);
 }
 
 
