@@ -25,7 +25,7 @@
                 <div class="links">
                     
                 </div>
-                <div class="burgerbox">
+                <div class="burgerbox" onClick='switchNav(event)'>
                     <i class='burger cross'></i>
                 </div>
             </div>

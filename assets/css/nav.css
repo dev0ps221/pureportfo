@@ -48,15 +48,24 @@ nav .burger{
 }
 nav .burger::before,nav .burger::after{
     content: "";
+    transition: 1s;
     position: absolute;
     width: 100%;
     height: 5px;
     background: var(--main-background-color);
     bottom: .8rem;
 }
+nav .burger::after{
+    top: .8rem;
+}
 nav .burger.cross{
     background: none;
 }
-nav .burger::after{
-    top: .8rem;
+nav .burger.cross::before{
+    transform: rotate(50deg);
+    top:-50%;
+}
+nav .burger.cross::after{
+    transform: rotate(-50deg);
+    top:50%;
 }
