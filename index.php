@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur mon profil</title>
+    <link rel="stylesheet" href="/assets/css/vars.css">
     <link rel="stylesheet" href="/assets/css/master.css">
     <link rel="stylesheet" href="/assets/css/nav.css">
 </head>
@@ -14,7 +15,7 @@
     <section class="wrapper">
 
         <nav>
-
+            
         </nav>
 
     </section>
