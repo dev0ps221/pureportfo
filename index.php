@@ -25,7 +25,9 @@
                 <div class="links">
                     
                 </div>
-                <div class='burger'></div>
+                <div class="burgerbox">
+                    <i class='burger cross'></i>
+                </div>
             </div>
         </nav>
 

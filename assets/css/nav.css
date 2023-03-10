@@ -14,3 +14,49 @@ nav .wrapper{
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav .burgerbox{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+nav .burger{
+    display: grid;
+    align-items: center;
+    width: 50px;
+    height: 5px;
+    background: var(--main-background-color);
+    position: relative;
+    isolation: isolate;
+    margin-block: .4rem;
+}
+nav .burger::before,nav .burger::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: var(--main-background-color);
+    bottom: .8rem;
+}
+nav .burger.cross{
+    background: none;
+}
+nav .burger::after{
+    top: .8rem;
+}
