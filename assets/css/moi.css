@@ -29,11 +29,30 @@
 #moi .tool-and-tech:hover .overlaydata{
     background: #111d;
 }
+#moi .infobox{
+    background: var(--main-color);
+    color: var(--main-background-color);
+}
+#moi .info{
+    width: 100%;
+    display: grid;
+    padding: 1rem;
+    margin-block: .5rem;
+    background: var(--main-background-color);
+    color: var(--main-color);
+}
+
+#moi .label{
+    padding: 1.5rem;
+}
 @media screen and (max-width:992px) {
     #moi .techstack .stack{
         row-gap: 1rem;
         grid-gap:1rem;
         grid-template-columns: repeat(3,4fr);
+    }
+    #moi .overview{
+        grid-template-columns: 12fr !important;
     }
 }
 @media screen and (max-width:600px) {
