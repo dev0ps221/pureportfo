@@ -1,3 +1,4 @@
+/* //nav layout */
 nav{
     position: sticky;
     top: 0;
@@ -20,6 +21,12 @@ nav .wrapper{
 
 
 
+/* //links */
+nav .links{
+    position: absolute;
+    background: var(--main-color);
+    top:var(--nav-height);
+}
 
 
 
@@ -28,6 +35,8 @@ nav .wrapper{
 
 
 
+
+/* //burgermenu */
 nav .burgerbox{
     margin: 0;
     padding: 0;
@@ -73,8 +82,4 @@ nav .burger.cross::after{
     transform: rotate(-50deg);
     top:50%;
 }
-nav .links{
-    position: absolute;
-    background: var(--main-color);
-    top:var(--nav-height);
-}
+
