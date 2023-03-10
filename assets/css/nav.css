@@ -73,3 +73,8 @@ nav .burger.cross::after{
     transform: rotate(-50deg);
     top:50%;
 }
+nav .links{
+    position: absolute;
+    background: var(--main-color);
+    top:var(--nav-height);
+}

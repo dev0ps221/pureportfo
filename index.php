@@ -23,7 +23,18 @@
                     </div>
                 </div>
                 <div class="links">
-                    
+                    <div class="linktab">
+                        <a href="/" class="link">section</a>
+                    </div>
+                    <div class="linktab">
+                        <a href="/" class="link">section</a>
+                    </div>
+                    <div class="linktab">
+                        <a href="/" class="link">section</a>
+                    </div>
+                    <div class="linktab">
+                        <a href="/" class="link">section</a>
+                    </div>
                 </div>
                 <div class="burgerbox" onClick='switchNav(event)'>
                     <i class='burger'></i>
