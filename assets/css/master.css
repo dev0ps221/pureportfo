@@ -9,6 +9,8 @@
 }
 h1,h2,h3,h4,h5,h6{
     font-size: var(--heading-font-size);
+    text-align: center;
+    align-items: center;
 }
 body{
     width: 100vw;
@@ -19,8 +21,14 @@ body{
     background-image: var(--main-background-image);
     color: var(--main-color);
 }
+.wrapper{
+    animation: fadeIn 1.5s ease-in;
+}
 .wrapper *{
-    animation: leftIn 1s forwards;
+    animation: leftIn 1.8s forwards;
+}
+.wrapper:nth-child(odd) > *{
+    animation: rightIn 1.2s forwards;
 }
 
 .overlaybox{
@@ -41,7 +49,7 @@ body{
 }
 .overlaybox .overlaydata{
     display: flex;
-    background: #2225;
+    background: #1118;
     color:var(--overlay-color);
     flex-direction: column;
     font-weight: bolder;
@@ -58,4 +66,18 @@ img{
 }
 .profileicon .overlaydata{
     justify-content: center;
+}
+
+.pair{
+    padding-inline: var(--inline-padding);
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+.pair > *{
+    width: 100%;
+}
+@media screen and (max-width:992px) {
+    .pair{
+        grid-template-columns: 12fr;
+    }
 }

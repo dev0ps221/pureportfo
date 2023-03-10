@@ -79,27 +79,32 @@
             }
             #moi .techstack .stack{
                 display: grid;
-                padding: 1rem;
                 grid-template-columns: repeat(4,3fr);
                 row-gap: 1rem;
                 grid-gap:1rem;
             }
+            #moi .tool-and-tech > *{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: var(--max-font-size);
+            }
+            #moi .tool-and-tech:hover .overlaydata{
+                background: #111d;
+            }
             @media screen and (max-width:992px) {
-                #moi .wrapper{
-                    grid-template-columns: 12fr;
-                }
                 #moi .techstack .stack{
                     row-gap: 1rem;
                     grid-gap:1rem;
-                    padding: 1rem;
                 }
             }
             @media screen and (max-width:600px) {
-                #moi .wrapper{
-                    grid-template-columns: 12fr;
+                #moi .techstack .stack{
+                    row-gap: .3rem;
+                    grid-gap:.3rem;
                 }
                 #moi .techstack .stack{
-                    padding: 0;
                     grid-template-columns: repeat(3,4fr);
                 }
             }
@@ -109,7 +114,17 @@
             <div class="wrapper">
                 
                 <div class="about">
+                    <div class="overview">
+                        <div class="overlaybox">
+                            <img src="/assets/pics/self.jpg" alt="El Hadji Seybatou Mbengue" class="overlaypic">
+                            <h4>
+                                El Hadji Seybatou Mbengue
+                            </h4>
+                        </div>
+                        <div class="overview-content">
 
+                        </div>
+                    </div>
                 </div>
                 <div class="techstack">
                     <h2>

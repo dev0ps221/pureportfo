@@ -57,6 +57,7 @@ nav .links{
 
 /* //burgermenu */
 nav .burgerbox{
+    isolation: isolate;
     margin: 0;
     padding: 0;
     display: flex;
@@ -71,13 +72,13 @@ nav .burgerbox *,nav .burgerbox *::after,nav .burgerbox *::before{
 nav .burger{
     display: grid;
     align-items: center;
-    width: 50px;
-    height: 5px;
+    width: 35px;
+    height: 2.5px;
     background: var(--main-background-color);
     position: relative;
     isolation: isolate;
     margin-block: .4rem;
-    transition: 1s;
+    transition: .8s;
 }
 nav .burger::before,nav .burger::after{
     content: "";
@@ -91,14 +92,15 @@ nav .burger::after{
     top: .8rem;
 }
 nav .burger.cross{
+    position: relative;
     background: none;
 }
 nav .burger.cross::before{
     transform: rotate(50deg);
-    top:-50%;
+    top:calc(var(--nav-height));
 }
 nav .burger.cross::after{
     transform: rotate(-50deg);
-    top:50%;
+    top:calc(var(--nav-height))
 }
 
