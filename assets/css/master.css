@@ -80,7 +80,6 @@ img{
 }
 
 .pair{
-    align-items: center;
     display: grid;
     grid-template-columns: 6fr 6fr;
 }

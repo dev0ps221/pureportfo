@@ -45,7 +45,15 @@
 #moi .label{
     padding: 1.5rem;
 }
+
+#moi .aboutmetext{
+    padding-inline: calc(var(--inline-padding)/4);
+    padding-block: calc(var(--block-padding)/2);
+}
 @media screen and (max-width:992px) {
+    #moi .wrapper{
+        grid-template-columns: 12fr;
+    }
     #moi .techstack .stack{
         row-gap: 1rem;
         grid-gap:1rem;
