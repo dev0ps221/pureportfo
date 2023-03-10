@@ -28,15 +28,25 @@ nav .wrapper{
 
 /* //links */
 nav .links{
+    height: 0;
     position: absolute;
     background: var(--main-color);
     top:var(--nav-height);
     width: calc(calc(100vw - var(--inline-padding)/2)/1.25);
+    overflow: hidden;
+    z-index: 10;
+}
+nav .links.visible{
+    overflow-y: scroll;
+    height:calc(100vh - var(--nav-height)) ;
 }
 nav .links > *{
     padding: var(--base-padding);
 }
 
+nav .links{
+    transition: .8s;
+}
 
 
 

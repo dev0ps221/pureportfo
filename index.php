@@ -7,6 +7,7 @@
     <title>Bienvenue sur mon profil</title>
     <link rel="stylesheet" href="/assets/css/vars.css">
     <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/nav.css">
 </head>
 <body>
@@ -14,12 +15,13 @@
 
     <section class="wrapper">
 
+        <!-- navbar -->
         <nav>
             <div class="wrapper">
                 <div class="overlaybox profileicon">
                     <img src="/assets/pics/dev0ps221.jpeg" alt="logo tektech" class='overlaypic'>
                     <div class="overlaydata">
-                        texte
+                        @dev0ps221
                     </div>
                 </div>
                 <div class="links">
@@ -41,6 +43,20 @@
                 </div>
             </div>
         </nav>
+        <!-- end navbar -->
+
+
+        <!-- header -->
+        <header>
+            <div class="wrapper overlaybox">
+                <img src="/assets/pics/header.jpg" alt="en tete" class="overlaypic">
+                <div class="overlaydata">
+                    BIENVENUE SUR MON PROFIL
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
 
     </section>
     <script src="/assets/js/master.js"></script>

@@ -36,13 +36,21 @@ body{
 }
 .overlaybox .overlaydata{
     display: flex;
+    background: #2225;
     color:var(--overlay-color);
     flex-direction: column;
     font-weight: bolder;
     justify-content: space-between;
 }
 
+img{
+    object-fit: cover;
+}
+
 .profileicon{
     width: var(--profile-icon-width);
     height: var(--profile-icon-height);
+}
+.profileicon .overlaydata{
+    justify-content: center;
 }
