@@ -1,12 +1,16 @@
 :root{
     
     --main-background-color:#fff;
+    --main-background-image:"";
     --main-color:#111;
     --second-background-color:#1aa;
+    --second-background-image:"";
     --second-color:#f11;
     --third-background-color:#a1a;
+    --third-background-image:"";
     --third-color:#1f1;
     --fourth-background-color:#aa1;
+    --fourth-background-image:"";
     --fourth-color:#11f;
     
     --min-font-size:.8em;
