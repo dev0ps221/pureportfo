@@ -24,9 +24,9 @@
     --font-size:1em;
     --max-font-size:2em;
 
-    --min-heading-font-size:2.5em;
-    --heading-font-size:3em;
-    --max-heading-font-size:3.5em;
+    --min-heading-font-size:1.5em;
+    --heading-font-size:2em;
+    --max-heading-font-size:2.5em;
 
     
     /* //paddings */
@@ -54,34 +54,31 @@
     
     /* //main padding for different blocs */
     --inline-padding:15rem;
-    --block-padding:15rem;
+    --block-padding:7.5rem;
 
 }
 @media screen and (max-width:992px){
     :root{
         --inline-padding:5rem;
-        --block-padding:5rem;
+        --block-padding:2.5rem;
         --nav-height:60px;
         --profile-icon-width:65px;
         --profile-icon-height:55px;
-
-        --min-heading-font-size:1.5em;
-        --heading-font-size:2em;
-        --max-heading-font-size:2.5em;
+        --max-font-size:1.5em;
+        --min-heading-font-size:1.2em;
+        --heading-font-size:1.5em;
+        --max-heading-font-size:1.8em;
     }
 }
 @media screen and (max-width:600px){
     :root{
-        --inline-padding:2rem;
-        --block-padding:2rem;
+        --inline-padding:1rem;
+        --block-padding:.5rem;
         --min-font-size:.6em;
         --font-size:1em;
-        --max-font-size:1.3em;
+        --max-font-size:1.1em;
         --nav-height:42px;
         --profile-icon-width:35px;
         --profile-icon-height:25px;
-        --min-heading-font-size:.8em;
-        --heading-font-size:1.5em;
-        --max-heading-font-size:2.8em;
     }
 }

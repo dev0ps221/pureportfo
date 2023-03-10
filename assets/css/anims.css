@@ -26,11 +26,11 @@
 }
 @keyframes rightIn {
     from{
-        transform:translateX(-200vw);
+        transform:translateX(200vw);
     }
 }
 @keyframes rightOut {
     to{
-        transform:translateX(-200vw);
+        transform:translateX(200vw);
     }
 }
