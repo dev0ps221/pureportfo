@@ -2,9 +2,6 @@ header{
     display: block;
     height: var(--header-height);
 }
-header .overlaypic{
-    z-index: -10;
-}
 header .wrapper{
     height: 100%;
     width: 100%;
