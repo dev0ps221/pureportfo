@@ -72,8 +72,8 @@
 }
 @media screen and (max-width:600px){
     :root{
-        --inline-padding:2rem;
-        --block-padding:2rem;
+        --inline-padding:1rem;
+        --block-padding:1rem;
         --min-font-size:.6em;
         --font-size:1em;
         --max-font-size:1.3em;
