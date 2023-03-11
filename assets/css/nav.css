@@ -33,7 +33,8 @@ nav .links{
     position: absolute;
     background: var(--main-color);
     top:var(--nav-height);
-    width: calc(calc(100vw - var(--inline-padding)/2)/1.25);
+    left: 0 !important;
+    width: 100%;
     overflow: hidden;
 }
 nav .links.visible{
@@ -41,6 +42,9 @@ nav .links.visible{
     height:calc(100vh - var(--nav-height)) ;
 }
 nav .links > *{
+    margin: var(--base-padding);
+    width: 80%;
+    background:  var(--main-background-color);
     padding: var(--base-padding);
 }
 
@@ -95,12 +99,13 @@ nav .burger.cross{
     position: relative;
     background: none;
 }
+nav .burger.cross::before,nav .burger.cross::after{
+    top:calc(var(--nav-height) + 50%);
+}
 nav .burger.cross::before{
     transform: rotate(50deg);
-    top:calc(var(--nav-height));
 }
 nav .burger.cross::after{
     transform: rotate(-50deg);
-    top:calc(var(--nav-height))
 }
 
