@@ -24,6 +24,11 @@ h3,h4{
 h5,h6{
     font-size: var(--min-heading-font-size);
 }
+P{
+    padding: 10px;
+    box-shadow: .25rem .25rem .5rem #2225;
+    border-radius: .5rem;
+}
 body{
     width: 100vw;
     min-height: 100vh;
@@ -133,3 +138,4 @@ button {
         grid-template-columns: 12fr;
     }
 }
+
