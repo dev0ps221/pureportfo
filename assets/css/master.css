@@ -92,7 +92,7 @@ img{
 }
 
 /* //forms */
-input[type=text] ,input[type=number] ,input[type=password], textarea ,select{
+input[type=text] ,input[type=number] ,input[type=password], textarea ,select,form label{
     font-family:inherit;
     font-size: inherit;
     padding:10px;

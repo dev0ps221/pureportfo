@@ -318,6 +318,27 @@
             .service img{
                 width: 100%;
             }
+            #actionsservices{
+                padding-inline: var(--inline-padding);
+                text-align: center;
+            }
+            #actionsservices form{
+                padding-inline: var(--inline-padding);
+            }
+            #actionsservices form label{
+                display: flex;
+                min-width: 50%;    
+            }
+            #actionsservices form #champs_reclamer_offre{
+                display: flex;
+            }
+            #actionsservices form .field{
+                text-align: left;
+                padding: .5rem;
+            }
+            #actionsservices #reclamer_offre{
+                width: 50%;
+            }
         </style>
 
         <section id="services">
@@ -379,7 +400,7 @@
                     </div>
                     <div class="field">
                         <label for="compte">
-                            Pour qui faites vous la demande
+                            Pour qui faites vous la demande ?
                         </label>
                         <select required="" id="compte" name="cible_demande">
                             <option value="self">Moi-meme</option>
@@ -389,7 +410,7 @@
                     </div>
                     <div class="field">
                         <label for="besoin">
-                            Besoin
+                            De quoi avez vous besoin ?
                         </label>
                         <select required="" name="besoin" id="besoin">
                             <option value="siteweb">
@@ -407,12 +428,15 @@
                             <option value="cours">
                                 Formation | Mise à niveau
                             </option>
+                            <option value="autre">
+                                Autre..
+                            </option>
                         </select>
                     </div>
                     <div class="field">
                         <textarea type="text" id="description_demande" name="description" placeholder="Faites une description détaillée de votre demande en quelques lignes.."></textarea>
                     </div>
-                    <div class="field">
+                    <div class="field" id="champs_reclamer_offre">
                         <label for="reclamer_offre">
                             Vous y êtes presque, cliquez sur réclamer une offre !
                         </label>
