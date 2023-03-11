@@ -39,20 +39,29 @@ nav .links{
 }
 nav .links.visible{
     overflow-y: scroll;
-    height:calc(100vh - var(--nav-height)) ;
+    height:calc(50vh - var(--nav-height)) ;
 }
 nav .links > *{
-    margin: var(--base-padding);
-    width: 80%;
+    cursor: pointer;
+    margin: calc(var(--base-padding)/2);
+    width: 40%;
     background:  var(--main-background-color);
-    padding: var(--base-padding);
+    padding: calc(var(--base-padding)/2);
+    border-top-right-radius: var(--base-padding);
+    border-bottom-right-radius: var(--base-padding);
 }
 
 nav .links{
     transition: .8s;
 }
 
+@media screen and (max-width:992px) {
+    
+    nav .links > *{
+        width: 50%;
+    }
 
+}
 
 
 
