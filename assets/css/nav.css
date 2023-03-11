@@ -31,7 +31,8 @@ nav .wrapper{
 nav .links{
     height: 0;
     position: absolute;
-    background: var(--main-color);
+    /* background: var(--main-color); */
+
     top:var(--nav-height);
     left: 0 !important;
     width: 100%;
@@ -49,8 +50,11 @@ nav .links > *{
     padding: calc(var(--base-padding)/2);
     border-top-right-radius: var(--base-padding);
     border-bottom-right-radius: var(--base-padding);
+    border:1px solid var(--main-color);
 }
-
+nav .link{
+    display: block;
+}
 nav .links{
     transition: .8s;
 }
@@ -110,6 +114,9 @@ nav .burger.cross{
 }
 nav .burger.cross::before,nav .burger.cross::after{
     top:calc(var(--nav-height) + 50%);
+    top:50%;
+    box-shadow:0 0 1px var(--main-color);
+    border-radius: 5rem;
 }
 nav .burger.cross::before{
     transform: rotate(50deg);

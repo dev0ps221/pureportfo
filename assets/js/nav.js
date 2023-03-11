@@ -14,3 +14,14 @@ function switchBurger(elem){
 function switchLinks(elem){
     elem.classList[elem.classList.contains('visible') ? 'remove' : 'add']('visible')
 }
+document.querySelectorAll(
+    'nav .link'
+).forEach(
+    navlink=>{
+        navlink.addEventListener(
+            'click',e=>{
+                switchNav(null)
+            }
+        )
+    }
+)
