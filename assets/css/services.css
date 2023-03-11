@@ -1,0 +1,36 @@
+
+#services{
+    padding-block: var(--block-padding);
+}
+#services .liste_services{
+    display: grid;
+    padding-inline: var(--inline-padding);
+}
+.service{
+    padding-block: calc(var(--block-padding)/2);
+    width: 100%;
+}
+.service img{
+    width: 100%;
+}
+#actionsservices{
+    padding-inline: var(--inline-padding);
+    text-align: center;
+}
+#actionsservices form{
+    padding-inline: var(--inline-padding);
+}
+#actionsservices form label{
+    display: flex;
+    min-width: 50%;    
+}
+#actionsservices form #champs_reclamer_offre{
+    display: flex;
+}
+#actionsservices form .field{
+    text-align: left;
+    padding: .5rem;
+}
+#actionsservices #reclamer_offre{
+    width: 50%;
+}

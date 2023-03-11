@@ -33,22 +33,35 @@ nav .links{
     position: absolute;
     background: var(--main-color);
     top:var(--nav-height);
-    width: calc(calc(100vw - var(--inline-padding)/2)/1.25);
+    left: 0 !important;
+    width: 100%;
     overflow: hidden;
 }
 nav .links.visible{
     overflow-y: scroll;
-    height:calc(100vh - var(--nav-height)) ;
+    height:calc(50vh - var(--nav-height)) ;
 }
 nav .links > *{
-    padding: var(--base-padding);
+    cursor: pointer;
+    margin: calc(var(--base-padding)/2);
+    width: 40%;
+    background:  var(--main-background-color);
+    padding: calc(var(--base-padding)/2);
+    border-top-right-radius: var(--base-padding);
+    border-bottom-right-radius: var(--base-padding);
 }
 
 nav .links{
     transition: .8s;
 }
 
+@media screen and (max-width:992px) {
+    
+    nav .links > *{
+        width: 50%;
+    }
 
+}
 
 
 
@@ -95,12 +108,13 @@ nav .burger.cross{
     position: relative;
     background: none;
 }
+nav .burger.cross::before,nav .burger.cross::after{
+    top:calc(var(--nav-height) + 50%);
+}
 nav .burger.cross::before{
     transform: rotate(50deg);
-    top:calc(var(--nav-height));
 }
 nav .burger.cross::after{
     transform: rotate(-50deg);
-    top:calc(var(--nav-height))
 }
 
