@@ -488,6 +488,19 @@
                 flex-direction: column;
                 justify-content: flex-start;
             }
+            footer .copyrights{
+                display: flex;
+                justify-content: center;
+                background: #3335;
+                padding-block: var(--base-padding);
+                border-top-right-radius: var(--base-padding);
+                border-top-left-radius: var(--base-padding);
+            }
+
+            footer .copyrights,footer .copyrights *{
+                width: 100%;
+                text-align: center;
+            }
             @media screen and (max-width:992px) {
                 footer .wrapper{
                     grid-template-columns: 12fr;
@@ -576,6 +589,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="copyrights">
+                <p>copyrights <a href="http://mrmbengue.rf.gd"> EL HADJI SEYBATOU MBENGUE </a> - 2023</p>
             </div>
         </footer>
 
