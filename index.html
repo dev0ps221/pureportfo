@@ -307,6 +307,9 @@
 
         <!-- //services -->
         <style>
+            #services{
+                padding-block: var(--block-padding);
+            }
             #services .liste_services{
                 display: grid;
                 padding-inline: var(--inline-padding);
@@ -452,10 +455,10 @@
         <style>
             footer{
                 background-color: var(--main-color);
-                color: var(--main-background-color);
                 padding-inline: var(--inline-padding);
             }
             footer *{
+                color: var(--main-background-color);
                 text-align: left;
                 padding: 0;
                 margin: 0;
@@ -463,6 +466,27 @@
             footer .wrapper{
                 display: grid;
                 grid-template-columns: repeat(4,3fr);
+            }
+            footer .footcolumn{
+                display: flex;
+                flex-direction: column;
+                min-height: 40vh;
+            }
+            footer .footcolumn .footheading{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                height: 10vh;
+                padding-block: var(var(--block-padding)/3);
+            }
+            footer .footcolumn .footheading *{
+                font-size: 20px;
+            }
+            footer .footcolumn .footbody{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
             }
             @media screen and (max-width:992px) {
                 footer .wrapper{
@@ -472,18 +496,25 @@
         </style>
         <footer>
             <div class="wrapper">
-                <div class="footcolumn pair pair-1-3">
-                    <a href="/" class="overlaybox profileicon">
-                        <img src="/assets/pics/dev0ps221.jpeg" alt="logo tektech" class='overlaypic'>
-                        <div class="overlaydata">
-                            @dev0ps221
-                        </div>
-                    </a>
-                    <a href="http://mrmbengue.rf.gd">
-                        <h4>
-                            EL HADJI SEYBATOU MBENGUE
-                        </h4>
-                    </a>
+                <div class="footcolumn">
+                    <div class="footheading">
+                        <a href="/" class="overlaybox profileicon">
+                            <img src="/assets/pics/dev0ps221.jpeg" alt="logo tektech" class='overlaypic'>
+                            <div class="overlaydata">
+                                @dev0ps221
+                            </div>
+                        </a>
+                    </div>  
+                    <div class="footbody">
+                        <a href="http://mrmbengue.rf.gd">
+                            <h6>
+                                EL HADJI SEYBATOU MBENGUE
+                            </h6>
+                        </a>
+                        <p>
+                            Je suis un passionne des technologies depuis l'enfance, et j'adore les défis. Je ne me cherche pas de limites en termes de compétences et je porte un sensible interet pour tout projet ou travail requérant l'informatique la programmation ou une quelconque orientation de ces sujets. Visons l 'excellence et la productivité. A bientôt pour des partenariats efficaces et fructueux. 
+                        </p>
+                    </div>
                 </div>
                 <div class="footcolumn">
                     <div class="footheading">
@@ -492,13 +523,13 @@
                         </h4>
                     </div>
                     <div class="footbody">
-                        <div class="service">
+                        <div class="service_footer">
                             sites web
                         </div>
-                        <div class="service">
+                        <div class="service_footer">
                             logiciels
                         </div>
-                        <div class="service">
+                        <div class="service_footer">
                             cours particuliers
                         </div>
                     </div>
@@ -534,13 +565,13 @@
                         </h4>
                     </div>
                     <div class="footbody">
-                        <div class="service">
+                        <div class="contact">
                             Senegal, Dakar, Pikine Tally Bou Bess 2638
                         </div>
-                        <div class="service">
+                        <div class="contact">
                             +221 78 426 83 44
                         </div>
-                        <div class="service">
+                        <div class="contact">
                             seybalofficiel@gmail.com
                         </div>
                     </div>
