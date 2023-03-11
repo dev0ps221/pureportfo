@@ -3,10 +3,10 @@
     //Author:@dev0ps221
 */
 
-*{
+*,*::before,*::after{
     scroll-behavior: smooth;
     margin:0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
     padding-inline: calc(var(--base-padding)/2);
@@ -90,6 +90,43 @@ img{
     width: 98%;
     margin-inline: 1%;
 }
+
+/* //forms */
+input[type=text] ,input[type=number] ,input[type=password], textarea ,select,form label{
+    font-family:inherit;
+    font-size: inherit;
+    padding:10px;
+    margin:10px 0; 
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    border: .5px solid #ddd;
+    width:100%;
+}
+
+input[type=text]:hover ,input[type=number]:hover ,input[type=password]:hover, textarea:hover ,select:hover{
+    border: 1px solid #aaa;
+}
+textarea{
+    resize: vertical;
+  height:150px;
+}
+button {
+
+    /* remove default behavior */
+    appearance:none;
+    -webkit-appearance:none;
+  
+    /* usual styles */
+    padding:10px;
+    border:none;
+    background-color:var(--main-color);
+    color:var(--main-background-color);
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+    cursor: pointer;
+  
+  }
 @media screen and (max-width:600px) {
     .pair{
         grid-template-columns: 12fr;

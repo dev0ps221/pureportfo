@@ -68,9 +68,6 @@
         <section id="moi">
             <div class="wrapper pair">
                 <div class="about">
-                    <h2>
-                        A propos de moi
-                    </h2>
                     <div class="overview pair pair-1-3">
                         <div class="avatar">
                             <img src="/pureportfo/assets/pics/self.jpg" alt="El Hadji Seybatou Mbengue">
@@ -143,9 +140,6 @@
                     </div>
                 </div>
                 <div class="techstack">
-                    <h2>
-                        mon stack de technologies
-                    </h2>
                     <div class="stack">
 
                         <a  class="tool-and-tech overlaybox" target="_blank" href="https://expressjs.com" rel="noreferrer"> 
@@ -314,53 +308,144 @@
         <!-- //services -->
         <style>
             #services .liste_services{
+                display: grid;
                 padding-inline: var(--inline-padding);
             }
-            #services .liste_services .service *{
-                margin-inline: auto;
-                width: 95%;
+            .service{
+                padding-block: calc(var(--block-padding)/2);
+                width: 100%;
+            }
+            .service img{
+                width: 100%;
+            }
+            #actionsservices{
+                padding-inline: var(--inline-padding);
+                text-align: center;
+            }
+            #actionsservices form{
+                padding-inline: var(--inline-padding);
+            }
+            #actionsservices form label{
+                display: flex;
+                min-width: 50%;    
+            }
+            #actionsservices form #champs_reclamer_offre{
+                display: flex;
+            }
+            #actionsservices form .field{
+                text-align: left;
+                padding: .5rem;
+            }
+            #actionsservices #reclamer_offre{
+                width: 50%;
             }
         </style>
 
         <section id="services">
-            <h2>
-                Je propose mes services dans
-            </h2>
-            <div class="liste_services">
-                <div class="service pair">
-                    <div class="overlaybox">
+            <div class="liste_services pair">
+                <div class="service pair pair-1-3">
+                    <div>
                         <img src="/pureportfo/assets/illus_services/integration.avif" alt="integration de fonctionnalites" class="overlaypic"/>
-                        <h2 class="overlaydata">
+                    </div>
+                    <div class="descriptif_service">
+                        <h4>
                             INTEGRATION DE FONCTIONNALITES
-                        </h2>
+                        </h4>
+                        <p>
+                            Je propose l'intégration de fonctionnalités pour les développeurs. Je suis un développeur compétent expert en intégration de fonctionnalités. Je vous offre mes services à un prix compétitif et je peux livrer votre projet en temps et en budget.
+
+                        </p>
                     </div>
-                    <p class="descriptif_service">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam id sit porro laborum eligendi ipsam maxime reprehenderit nam non aut praesentium delectus, consectetur, at accusamus eaque, excepturi sequi omnis nihil?
-                    </p>
                 </div>
-                <div class="service pair">
-                    <div class="overlaybox">
+                <div class="service pair pair-1-3">
+                    <div>
                         <img src="/pureportfo/assets/illus_services/webdev.avif" alt="integration de fonctionnalites" class="overlaypic"/>
-                        <h2 class="overlaydata">
+                    </div>
+                    <div class="descriptif_service">
+                        <h4>
                             DEVELOPPEMENT WEB
-                        </h2>
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam id sit porro laborum eligendi ipsam maxime reprehenderit nam non aut praesentium delectus, consectetur, at accusamus eaque, excepturi sequi omnis nihil?
+                        </p>
                     </div>
-                    <p class="descriptif_service">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam id sit porro laborum eligendi ipsam maxime reprehenderit nam non aut praesentium delectus, consectetur, at accusamus eaque, excepturi sequi omnis nihil?
-                    </p>
                 </div>
-                <div class="service pair">
-                    <div class="overlaybox">
+                <div class="service pair pair-1-3">
+                    <div>
                         <img src="/pureportfo/assets/illus_services/mobdev.avif" alt="integration de fonctionnalites" class="overlaypic"/>
-                        <h2 class="overlaydata">
-                            DEVELOPPEMENT MOBILE
-                        </h2>
                     </div>
-                    <p class="descriptif_service">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam id sit porro laborum eligendi ipsam maxime reprehenderit nam non aut praesentium delectus, consectetur, at accusamus eaque, excepturi sequi omnis nihil?
-                    </p>
+                    <div class="descriptif_service">
+                        <h4>
+                            DEVELOPPEMENT MOBILE
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam id sit porro laborum eligendi ipsam maxime reprehenderit nam non aut praesentium delectus, consectetur, at accusamus eaque, excepturi sequi omnis nihil?
+                        </p>
+                    </div>
                 </div>
             </div>
+            <section id="actionsservices">
+                <h1>
+                    LOUEZ MES SERVICES
+                </h1>
+                <em>
+                    Remplissez ce formulaire et je vous fais une offre dans les 72h qui suivent
+                </em>
+                <form id="demander-offre" method="post" action="/demande/nouvelle">
+                    <div class="field">    
+                        <input required="" placeholder="Votre nom complet" type="text" id="nom_complet" name="nom_complet">
+                    </div>
+                    <div class="field">
+                        <input required="" placeholder="Votre numéro de téléphone" type="number" id="telephone" name="telephone">
+                    </div>
+                    <div class="field">
+                        <label for="compte">
+                            Pour qui faites vous la demande ?
+                        </label>
+                        <select required="" id="compte" name="cible_demande">
+                            <option value="self">Moi-meme</option>
+                            <option value="company">Mon|Une entreprise</option>
+                            <option value="other">Quelqu'un d'autre</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="besoin">
+                            De quoi avez vous besoin ?
+                        </label>
+                        <select required="" name="besoin" id="besoin">
+                            <option value="siteweb">
+                                Site web
+                            </option>
+                            <option value="review">
+                                Une revue de code
+                            </option>
+                            <option value="integration">
+                                Integrer des fonctionnalites a un projet existant
+                            </option>
+                            <option value="app">
+                                Application
+                            </option>
+                            <option value="cours">
+                                Formation | Mise à niveau
+                            </option>
+                            <option value="autre">
+                                Autre..
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <textarea type="text" id="description_demande" name="description" placeholder="Faites une description détaillée de votre demande en quelques lignes.."></textarea>
+                    </div>
+                    <div class="field" id="champs_reclamer_offre">
+                        <label for="reclamer_offre">
+                            Vous y êtes presque, cliquez sur réclamer une offre !
+                        </label>
+                        <button id="reclamer_offre" name="reclamer_offre">
+                            Reclamer une offre
+                        </button>
+                    </div>
+                </form>
+            </section>
         </section>
 
 
